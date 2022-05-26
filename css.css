@@ -1,0 +1,106 @@
+/*Css reset*/
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/*Navbar variables*/
+/* :root {
+    --navbar-height: 599px;
+} */
+body{
+    margin: 0 0;
+}
+#navbar {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity:0.5;
+}
+
+/*Navigation bar logo and image  */
+#logo {
+    display: flex;
+    width: 134px;
+    height: 85px;
+    margin: 34px 17px;
+    align-items: center;
+}
+
+#logo img {
+    left: 200px;
+    height: 80px;
+    margin: 2px 1px;
+    width: 130px;
+    border-radius: 40px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    color: white;
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    padding: 3px 30px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    color: rgb(255, 0, 8);
+    font-size: 2.0rem;
+    padding: 3px 30px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    opacity: 2;
+    font-family: 'Macondo', cursive;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+#h-primery{
+    width: 50%;
+    margin: 120px 25px 20px 260px;
+    font-size: 2.5rem;
+    display: flex;
+    font-family: 'Macondo', cursive;
+}
+
+#home::before {
+    content: "";
+    background: url("/bgimg.webp") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .9;
+}
+#btn{
+    padding: 3px 20px;
+    border: 2px solid black ;
+    margin-left: 550px;
+    font-size: 2rem;
+}
